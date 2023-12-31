@@ -1,49 +1,53 @@
-# Bug Fix Practice - Main Branch
+# Bug Fix Practice - Solution Branch
 
-# Buggy add_numbers function
+# Fixed add_numbers function
 def add_numbers(a, b):
-    result = a * b
+    result = a + b  # Fixed: addition instead of multiplication
     return result
 
-# Buggy multiply_numbers function
+# Fixed multiply_numbers function
 def multiply_numbers(a, b):
-    result = a + b
+    result = a * b  # Fixed: multiplication instead of addition
     return result
 
-# Buggy fibonacci_sequence function
+# Fixed fibonacci_sequence function
 def fibonacci_sequence(n):
     sequence = [0, 1]
-    for i in range(2, n):
-        sequence.append(sequence[i + 1] * sequence[i])
+    if n <= 1: # Fixed: return the first 2 elements
+        return sequence[:n + 1] # Fixed: return the first n + 1 elements
+
+    for i in range(2, n + 1): # Fixed: Adjust the loop range to include n
+        sequence.append(sequence[i - 1] + sequence[i - 2]) # Fixed: add the previous 2 elements
 
     return sequence
 
-# Buggy factorial_recursive function
+# Fixed factorial_recursive function
 def factorial_recursive(n):
-    if n == 1:
-        return 0
+    if n == 0:
+        return 1  # Fixed: should be 1 for factorial
     else:
         return n * factorial_recursive(n - 1)
 
-# Buggy is_prime function
+# Fixed is_prime function
 def is_prime(num):
     if num < 2:
-        return True
+        return False  # Fixed: should be False for non-prime numbers
     for i in range(2, num):
         if num % i == 0:
-            return True
-    return False
+            return False
+    return True  # Fixed: should be True for prime numbers
 
-# Buggy calculate_average function
+# Fixed calculate_average function
 def calculate_average(x, y, z):
-    total = add_numbers(x, y, z)
+    total = add_numbers(x, y)  # Fixed: remove extra argument for add_numbers()
+    total = add_numbers(total, z)  # Fixed: remove extra argument for add_numbers()
     average = total / 3
     return average
 
-# Buggy print_primes function
+# Fixed print_primes function
 def print_primes(n):
     count = 0
-    i = 3
+    i = 2 # Fixed: start at 2 for prime numbers
     while count < n:
         if is_prime(i):
             print(i, end=" ")
