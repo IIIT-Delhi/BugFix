@@ -58,7 +58,7 @@ The `main.py` file includes intentional bugs in Python code snippets. Practice i
 
 ## Feedback
 
-If you encounter issues or have suggestions, please [open an issue](https://github.com/your-username/BugFix/issues).
+If you encounter issues or have suggestions, please [open an issue](https://github.com/Vikranth3140/BugFix/issues).
 
 ## License
 
