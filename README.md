@@ -1,2 +1,3 @@
-# BugFix
-A collaborative coding playground for honing bug-fixing skills. Practice identifying and resolving intentional issues in various code snippets. Learn, contribute, and improve coding expertise together!
+# BugFix - Solution
+
+This branch (`solution.py`) contains corrected versions of the Python code snippets found in `main.py` with intentional bugs. Use this file as a reference to compare your bug fixes and learn from the corrected implementations.
