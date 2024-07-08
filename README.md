@@ -64,8 +64,4 @@ If you encounter issues or have suggestions, please [open an issue](https://gith
 
 This project is licensed under the [MIT License](LICENSE).
 
-## Author
-
-[Vikranth Udandarao](https://github.com/Vikranth3140)
-
 Happy Bug Fixing!
